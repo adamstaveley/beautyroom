@@ -1,0 +1,14 @@
+{
+    "title": "Other",
+    "fields": [
+        {
+            "name": "Algimud Body",
+            "price": "£54.50",
+            "note": "Purifying, hydrating and firming. Applied to problem areas to tone body contours. Suitable for stretch marks and cellulite."
+        },
+        {
+            "name": "Tanning Treatment",
+            "price": "£30.50"
+        }
+    ]
+}

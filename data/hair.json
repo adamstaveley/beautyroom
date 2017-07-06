@@ -1,0 +1,23 @@
+{
+    "title": "Electrolysis",
+    "fields": [
+        {
+            "name": "5 minutes",
+            "price": "£16.00"
+        },
+        {
+            "name": "10 minutes",
+            "price": "£19.25"
+        },
+        {
+            "name": "15 minutes",
+            "price": "£23.00"
+        },
+        {
+            "name": "30 minutes",
+            "price": "£38.50"
+        }
+    ]
+}
+
+

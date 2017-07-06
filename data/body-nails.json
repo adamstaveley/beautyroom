@@ -1,0 +1,38 @@
+{
+    "title": "Nails",
+    "fields": [
+        {
+            "name": "Manicure",
+            "price": "£25.00"
+        },
+        {
+            "name": "French Manicure",
+            "price": "£27.50"
+        },
+        {
+            "name": "Spa Hand Treatment (with Manicure)",
+            "price": "£33.00 (£43.00)"
+        },
+        {
+            "name": "Pedicure",
+            "price": "£33.00"
+        },
+        {
+            "name": "Spa Foot Treatment (with Pedicure)",
+            "price": "£38.50 (£57.50)"
+        },
+        {
+            "name": "Re-varnish",
+            "price": "£15.50"
+        },
+        {
+            "name": "Shellac",
+            "price": "£35.00"
+        },
+        {
+            "name": "Shellac Removal",
+            "price": "£45.00"
+        }
+    ]
+}
+

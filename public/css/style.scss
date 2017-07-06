@@ -1,0 +1,462 @@
+/*
+    GLOBAL
+*/
+
+.jumbotron {
+    border-top: solid 1px #164D8F;
+    position: relative;
+}
+
+.jumbotron .container {
+
+    @media (min-width: 600px) {
+        height: 100vh;
+    }
+
+    h1 {
+        color: #164D8F;
+        font-weight: bolder;
+    }
+    p {
+        color: #26262d;
+    }
+}
+
+#button-nav {
+    margin: 0 auto;
+    width: 200px;
+
+    a {
+        background: none;
+
+        &:active {
+            background-color: #fff;
+        }
+    }
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    //border: 1px solid #fbc2eb;
+    //border-radius: 4px;
+    margin-right: 20px;
+
+    //&:hover {
+        //border-color: #164D8F;
+    //}
+}
+
+table {
+    color: #26262d;
+}
+
+a:active, a:focus {
+    outline: none;
+}
+
+/*
+    TRANSITIONS
+*/
+
+
+
+
+/*
+    NAVIGATION
+*/
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-default {
+    background-image: linear-gradient(-225deg, #FFF 0%, #FFE6FA 100%);
+    border: none;
+    border-radius: 0;
+    border-bottom: solid 1px #164D8F;
+
+    .navbar-brand {
+        color: #164D8F;
+
+        &:hover, &:focus {
+            color: #26262d;
+        }
+    }
+
+    .navbar-toggle {
+        &:hover, &:active, &:focus {
+            background-color: #fff;
+        }
+    }
+
+    .navbar-nav li a {
+        color: #0073FF;
+
+        &:hover, &:focus {
+            color: #26262d;
+        }
+    }
+}
+
+
+/*
+    COVER
+*/
+
+.jumbotron#cover {
+
+    height: 95vh;
+    background-image: url(../img/beach-544621_1280.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #FFE6FA;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    @media (min-width: 1000px) and (min-height: 750px) {
+        h1 {
+            margin-top: 20vh;
+        }
+    }
+}
+
+
+/*
+    ABOUT
+*/
+
+.jumbotron#about {
+    height: 100vh;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: solid 1px #164D8F;
+
+    @media (max-width: 600px) {
+        & {
+            height: 100%;
+        }
+    }
+
+    @media (min-width: 900px) and (min-height: 750px) {
+        h1 {
+            margin-bottom: 5vh;
+        }
+        h4 {
+            margin: 5vh 0;
+        }
+        #button-nav {
+            margin-top: 10vh;
+        }
+    }
+
+    @media (min-width: 1600px) {
+        h4 {
+            margin: 10vh 0;
+        }
+    }
+
+    h3 {
+        margin-top: 0;
+    }
+
+    .table#contact {
+        width: 50%;
+        margin-bottom: 30px;
+
+        caption {
+            color: #164D8F;
+        }
+
+        td {
+            padding: 0;
+            border: none;
+        }
+
+        @media(max-width: 600px) {
+            & {
+                width: 100%;
+            }
+        }
+    }
+
+    #button-nav {
+        a {
+            color: #164D8F;
+            border-color: #a6c1ee;
+
+            &:hover, &:active {
+                color: #26262d;
+                border-color: #26262d;
+            }
+        }
+    }
+}
+
+
+/*
+    TESTIMONIALS
+*/
+
+.jumbotron#testimonials {
+    height: 100vh;
+    margin-bottom: 0;
+    background-image: linear-gradient(-225deg, #ffe6fa 0%, #E3FDF5 100%);
+
+    @media (max-width: 900px) {
+        & {
+            height: 100%;
+        }
+        .container {
+            height: 100%;
+        }
+    }
+
+    @media (min-width: 900px) and (min-height: 750px) {
+        .flex-container {
+            height: 20vh;
+        }
+   }
+
+    h1 {
+        color: #b73956;
+        margin-bottom: 30px;
+    }
+
+    .flex-container {
+        margin-bottom: 20px;
+    }
+
+    #flex-right {
+        flex-direction: row-reverse;
+
+        .image-container {
+            margin-right: 0;
+            margin-left: 20px;
+        }
+    }
+
+    #button-nav {
+        a {
+            color: #b73956;
+            border-color: #dac1c1;
+
+            &:hover, &:active {
+                color: #26262d;
+                border-color: #26262d;
+            }
+        }
+    }
+}
+
+
+/*
+    PRICES
+*/
+
+@keyframes slideup {
+    0% { margin-top: 100%; }
+    100% { margin-top: 0; }
+}
+
+@keyframes imgslidedown {
+    0% { margin-top: -100%; }
+    100% { margin-top: 0; }
+}
+
+@keyframes capslidedown {
+    0% { margin-bottom: 100%; }
+    100% { margin-top: 0; }
+}
+
+.jumbotron#prices {
+    height: 100vh;
+    margin-bottom: 0;
+    background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+
+    h1 {
+        color: #fff;
+    }
+
+    .flex-container {
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        width: 220px;
+        height: 350px;
+        background: white;
+        margin: 10px;
+        flex-grow: 1;
+        border-radius: 4px;
+        position: relative;
+        overflow: hidden;
+
+        @media (min-width: 900px) and (min-height: 750px) {
+            & {
+                height: 65vh;
+
+                & img {
+                    object-fit: cover;
+                    height: 45vh;
+                }
+            }
+        }
+
+        @media (min-width: 1600px) {
+            & {
+                margin-bottom: 10vh;
+
+                .card-closed {
+                    margin-top: 10vh;
+
+                    img {
+                        height: 35vh;
+                    }
+                }
+            }
+        }
+
+        img {
+            display: block;
+            margin: 10px auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .card-closed {
+            height: 100%;
+            cursor: pointer;
+
+            animation-name: imgslidedown;
+            animation-duration: 1s;
+
+            &:hover h3, &:active h3 {
+                text-decoration: underline;
+                color: rosybrown;
+            }
+
+            .card-caption {
+                position: absolute;
+                bottom: 0;
+                padding: 5px 10px;
+                background: white;
+                border-bottom-left-radius: 4px;
+                border-bottom-right-radius: 4px;
+                width: 100%;
+
+                animation-name: capslidedown;
+                animation-duration: 1s;
+            }
+        }
+
+        .card-open {
+            height: 100%;
+            overflow-y: scroll;
+            margin-top: 0;
+
+            animation-name: slideup;
+            animation-duration: 1s;
+
+            .card-close-button {
+                margin: 0;
+                padding: 0;
+                cursor: pointer;
+
+                h4 {
+                    margin: 0;
+                    padding: 0;
+                    color: rosybrown;
+                    text-align: center;
+                }
+
+                &:hover h4, &:active h4 {
+                    color: #26262d;
+                }
+            }
+
+            .card-data {
+
+                h3 {
+                    margin-top: 10px;
+                    padding: 0 5px;
+                    color: #164D8F;
+
+                }
+
+                h5 {
+                    margin: 0;
+                }
+
+                h6 {
+                    margin-bottom: 0;
+                }
+
+                table {
+                    margin-bottom: 0;
+                }
+
+                table, tr, td {
+                    border-color: rosybrown;
+                }
+
+                tr:hover {
+                    background: rosybrown;
+                    color: white;
+                }
+
+                .price {
+                    text-align: right;
+                }
+            }
+        }
+    }
+
+    #button-nav {
+        a {
+            border-color: lightgrey;
+            color: #fff;
+
+            &:hover, &:active {
+                color: #26262d;
+                border-color: #26262d;
+            }
+        }
+    }
+
+
+    @media (max-width: 900px) {
+        & {
+            height: 100%;
+        }
+
+        .container {
+            height: 100%;
+        }
+
+        .flex-container {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+/*
+    FOOTER
+*/
+
+.jumbotron#footer {
+    margin-bottom: 0px;
+    background-image: linear-gradient(-225deg, #FFE6FA 0%, #FFF 100%);
+
+    .container {
+        height: 100%;
+    }
+
+}

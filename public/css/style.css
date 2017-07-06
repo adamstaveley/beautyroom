@@ -1,0 +1,283 @@
+/*
+    GLOBAL
+*/
+.jumbotron {
+  border-top: solid 1px #164D8F;
+  position: relative; }
+
+@media (min-width: 600px) {
+  .jumbotron .container {
+    height: 100vh; } }
+.jumbotron .container h1 {
+  color: #164D8F;
+  font-weight: bolder; }
+.jumbotron .container p {
+  color: #26262d; }
+
+#button-nav {
+  margin: 0 auto;
+  width: 200px; }
+  #button-nav a {
+    background: none; }
+    #button-nav a:active {
+      background-color: #fff; }
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; }
+
+.image-container {
+  margin-right: 20px; }
+
+table {
+  color: #26262d; }
+
+a:active, a:focus {
+  outline: none; }
+
+/*
+    TRANSITIONS
+*/
+/*
+    NAVIGATION
+*/
+.navbar {
+  margin-bottom: 0; }
+
+.navbar-default {
+  background-image: linear-gradient(-225deg, #FFF 0%, #FFE6FA 100%);
+  border: none;
+  border-radius: 0;
+  border-bottom: solid 1px #164D8F; }
+  .navbar-default .navbar-brand {
+    color: #164D8F; }
+    .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+      color: #26262d; }
+  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:focus {
+    background-color: #fff; }
+  .navbar-default .navbar-nav li a {
+    color: #0073FF; }
+    .navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus {
+      color: #26262d; }
+
+/*
+    COVER
+*/
+.jumbotron#cover {
+  height: 95vh;
+  background-image: url(../img/beach-544621_1280.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #FFE6FA;
+  margin-top: 0;
+  margin-bottom: 0; }
+  @media (min-width: 1000px) and (min-height: 750px) {
+    .jumbotron#cover h1 {
+      margin-top: 20vh; } }
+
+/*
+    ABOUT
+*/
+.jumbotron#about {
+  height: 100vh;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top: solid 1px #164D8F; }
+  @media (max-width: 600px) {
+    .jumbotron#about {
+      height: 100%; } }
+  @media (min-width: 900px) and (min-height: 750px) {
+    .jumbotron#about h1 {
+      margin-bottom: 5vh; }
+    .jumbotron#about h4 {
+      margin: 5vh 0; }
+    .jumbotron#about #button-nav {
+      margin-top: 10vh; } }
+  @media (min-width: 1600px) {
+    .jumbotron#about h4 {
+      margin: 10vh 0; } }
+  .jumbotron#about h3 {
+    margin-top: 0; }
+  .jumbotron#about .table#contact {
+    width: 50%;
+    margin-bottom: 30px; }
+    .jumbotron#about .table#contact caption {
+      color: #164D8F; }
+    .jumbotron#about .table#contact td {
+      padding: 0;
+      border: none; }
+    @media (max-width: 600px) {
+      .jumbotron#about .table#contact {
+        width: 100%; } }
+  .jumbotron#about #button-nav a {
+    color: #164D8F;
+    border-color: #a6c1ee; }
+    .jumbotron#about #button-nav a:hover, .jumbotron#about #button-nav a:active {
+      color: #26262d;
+      border-color: #26262d; }
+
+/*
+    TESTIMONIALS
+*/
+.jumbotron#testimonials {
+  height: 100vh;
+  margin-bottom: 0;
+  background-image: linear-gradient(-225deg, #ffe6fa 0%, #E3FDF5 100%); }
+  @media (max-width: 900px) {
+    .jumbotron#testimonials {
+      height: 100%; }
+    .jumbotron#testimonials .container {
+      height: 100%; } }
+  @media (min-width: 900px) and (min-height: 750px) {
+    .jumbotron#testimonials .flex-container {
+      height: 20vh; } }
+  .jumbotron#testimonials h1 {
+    color: #b73956;
+    margin-bottom: 30px; }
+  .jumbotron#testimonials .flex-container {
+    margin-bottom: 20px; }
+  .jumbotron#testimonials #flex-right {
+    flex-direction: row-reverse; }
+    .jumbotron#testimonials #flex-right .image-container {
+      margin-right: 0;
+      margin-left: 20px; }
+  .jumbotron#testimonials #button-nav a {
+    color: #b73956;
+    border-color: #dac1c1; }
+    .jumbotron#testimonials #button-nav a:hover, .jumbotron#testimonials #button-nav a:active {
+      color: #26262d;
+      border-color: #26262d; }
+
+/*
+    PRICES
+*/
+@keyframes slideup {
+  0% {
+    margin-top: 100%; }
+  100% {
+    margin-top: 0; } }
+@keyframes imgslidedown {
+  0% {
+    margin-top: -100%; }
+  100% {
+    margin-top: 0; } }
+@keyframes capslidedown {
+  0% {
+    margin-bottom: 100%; }
+  100% {
+    margin-top: 0; } }
+.jumbotron#prices {
+  height: 100vh;
+  margin-bottom: 0;
+  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%); }
+  .jumbotron#prices h1 {
+    color: #fff; }
+  .jumbotron#prices .flex-container {
+    justify-content: space-between;
+    margin-bottom: 20px; }
+  .jumbotron#prices .card {
+    width: 220px;
+    height: 350px;
+    background: white;
+    margin: 10px;
+    flex-grow: 1;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden; }
+    @media (min-width: 900px) and (min-height: 750px) {
+      .jumbotron#prices .card {
+        height: 65vh; }
+        .jumbotron#prices .card img {
+          object-fit: cover;
+          height: 45vh; } }
+    @media (min-width: 1600px) {
+      .jumbotron#prices .card {
+        margin-bottom: 10vh; }
+        .jumbotron#prices .card .card-closed {
+          margin-top: 10vh; }
+          .jumbotron#prices .card .card-closed img {
+            height: 35vh; } }
+    .jumbotron#prices .card img {
+      display: block;
+      margin: 10px auto;
+      max-width: 100%;
+      max-height: 100%; }
+    .jumbotron#prices .card .card-closed {
+      height: 100%;
+      cursor: pointer;
+      animation-name: imgslidedown;
+      animation-duration: 1s; }
+      .jumbotron#prices .card .card-closed:hover h3, .jumbotron#prices .card .card-closed:active h3 {
+        text-decoration: underline;
+        color: rosybrown; }
+      .jumbotron#prices .card .card-closed .card-caption {
+        position: absolute;
+        bottom: 0;
+        padding: 5px 10px;
+        background: white;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        width: 100%;
+        animation-name: capslidedown;
+        animation-duration: 1s; }
+    .jumbotron#prices .card .card-open {
+      height: 100%;
+      overflow-y: scroll;
+      margin-top: 0;
+      animation-name: slideup;
+      animation-duration: 1s; }
+      .jumbotron#prices .card .card-open .card-close-button {
+        margin: 0;
+        padding: 0;
+        cursor: pointer; }
+        .jumbotron#prices .card .card-open .card-close-button h4 {
+          margin: 0;
+          padding: 0;
+          color: rosybrown;
+          text-align: center; }
+        .jumbotron#prices .card .card-open .card-close-button:hover h4, .jumbotron#prices .card .card-open .card-close-button:active h4 {
+          color: #26262d; }
+      .jumbotron#prices .card .card-open .card-data h3 {
+        margin-top: 10px;
+        padding: 0 5px;
+        color: #164D8F; }
+      .jumbotron#prices .card .card-open .card-data h5 {
+        margin: 0; }
+      .jumbotron#prices .card .card-open .card-data h6 {
+        margin-bottom: 0; }
+      .jumbotron#prices .card .card-open .card-data table {
+        margin-bottom: 0; }
+      .jumbotron#prices .card .card-open .card-data table, .jumbotron#prices .card .card-open .card-data tr, .jumbotron#prices .card .card-open .card-data td {
+        border-color: rosybrown; }
+      .jumbotron#prices .card .card-open .card-data tr:hover {
+        background: rosybrown;
+        color: white; }
+      .jumbotron#prices .card .card-open .card-data .price {
+        text-align: right; }
+  .jumbotron#prices #button-nav a {
+    border-color: lightgrey;
+    color: #fff; }
+    .jumbotron#prices #button-nav a:hover, .jumbotron#prices #button-nav a:active {
+      color: #26262d;
+      border-color: #26262d; }
+  @media (max-width: 900px) {
+    .jumbotron#prices {
+      height: 100%; }
+    .jumbotron#prices .container {
+      height: 100%; }
+    .jumbotron#prices .flex-container {
+      margin-bottom: 50px; } }
+
+/*
+    FOOTER
+*/
+.jumbotron#footer {
+  margin-bottom: 0px;
+  background-image: linear-gradient(-225deg, #FFE6FA 0%, #FFF 100%); }
+  .jumbotron#footer .container {
+    height: 100%; }
+
+/*# sourceMappingURL=style.css.map */
