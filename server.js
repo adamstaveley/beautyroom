@@ -5,7 +5,8 @@ const MongoClient = require("mongodb").MongoClient;
 
 
 const app = express();
-const hostname = 'localhost';
+const hostname = '192.168.1.6';
+const mongoHost = 'localhost';
 const port = '8001';
 
 app.use(express.static('public'));
@@ -17,14 +18,14 @@ app.get('/', (req, res) => {
 
 app.get('/data/:collection', (req, res) => {
     const query = req.params.collection;
-    console.log(query);
+    //console.log(query);
     mongoFind(query, (result) => {
         res.send(result);
     });
 });
 
 function mongoFind(query, callback) {
-    const url = `mongodb://${hostname}:27017/prices`;
+    const url = `mongodb://${mongoHost}:27017/prices`;
     MongoClient.connect(url, (err, db) => {
         assert.equal(null, err);
         findDocuments(db, query, (result) => {

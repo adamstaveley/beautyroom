@@ -1,3 +1,5 @@
 node_modules/
+.sass-cache/
 beach-544621_1280.xcf
+data/*.json
 

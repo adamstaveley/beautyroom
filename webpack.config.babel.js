@@ -1,4 +1,4 @@
-import "webpack";
+const webpack = require("webpack");
 const path = require('path');
 
 const APP_DIR = path.resolve(__dirname, 'src');
